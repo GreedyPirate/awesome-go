@@ -40,6 +40,10 @@ func TestSlice(t *testing.T) {
 	s4[2] = 30
 	t.Log("slice:", s4, " get i:", s4[2])
 
+	for index,item := range s4{
+		t.Log(index, "-", item)
+	}
+
 	str := SliceInt2String(s2)
 	t.Log(str)
 
