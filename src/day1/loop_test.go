@@ -19,4 +19,10 @@ func TestLoop(t *testing.T) {
 	if v := 1 < 2; v {
 		fmt.Sprint(v)
 	}
+
+	str := "hello"
+
+	for i, e := range str{
+		t.Log(i, "---", e)
+	}
 }

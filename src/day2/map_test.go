@@ -26,6 +26,7 @@ func TestMap(t *testing.T) {
 	}
 
 	// 线程安全的map
+	// 声明即可，不需要初始化
 	var safeMap sync.Map
 	safeMap.Store("k1", "v1")
 	safeMap.Store("k2", "v2")
